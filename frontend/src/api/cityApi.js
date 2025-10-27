@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:3000/cities";
+// Use environment variable for production, fallback to localhost for development
+const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:3000/cities";
 
 // City mit 3 Bildern erstellen
 export const createCityApi = async (formData) => {
