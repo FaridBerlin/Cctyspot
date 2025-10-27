@@ -5,6 +5,7 @@ Full-stack application for managing cities with images using React, Node.js, Mon
 ## 🚀 Deployment on Render.com
 
 ### Prerequisites
+
 - GitHub account with this repository
 - Render.com account
 - MongoDB Atlas account (for production database)
@@ -16,6 +17,7 @@ Full-stack application for managing cities with images using React, Node.js, Mon
 2. Click **"New +"** → **"Web Service"**
 3. Connect your GitHub repository: `FaridBerlin/Cctyspot`
 4. Configure the service:
+
    - **Name**: `cctyspot-backend` (or your preferred name)
    - **Region**: Choose closest to you
    - **Branch**: `main`
@@ -26,6 +28,7 @@ Full-stack application for managing cities with images using React, Node.js, Mon
    - **Instance Type**: Free
 
 5. **Add Environment Variables** (click "Advanced" → "Add Environment Variable"):
+
    ```
    PORT=3000
    MONGO_URL=<your-mongodb-atlas-url>
@@ -45,6 +48,7 @@ Full-stack application for managing cities with images using React, Node.js, Mon
 2. Click **"New +"** → **"Static Site"**
 3. Connect your GitHub repository: `FaridBerlin/Cctyspot`
 4. Configure the site:
+
    - **Name**: `cctyspot-frontend` (or your preferred name)
    - **Branch**: `main`
    - **Root Directory**: `frontend`
@@ -52,9 +56,11 @@ Full-stack application for managing cities with images using React, Node.js, Mon
    - **Publish Directory**: `dist`
 
 5. **Add Environment Variable**:
+
    ```
    VITE_API_URL=<your-backend-url>/cities
    ```
+
    Example: `https://cctyspot-backend.onrender.com/cities`
 
 6. Click **"Create Static Site"**
@@ -76,6 +82,7 @@ Full-stack application for managing cities with images using React, Node.js, Mon
 ## 🛠️ Local Development
 
 ### Backend
+
 ```bash
 cd backend
 npm install
@@ -83,6 +90,7 @@ npm run dev
 ```
 
 ### Frontend
+
 ```bash
 cd frontend
 npm install
@@ -92,6 +100,7 @@ npm run dev
 ## 📝 Environment Variables
 
 ### Backend (.env)
+
 - `PORT` - Server port
 - `MONGO_URL` - MongoDB connection string
 - `DATABASE` - Database name
@@ -101,4 +110,5 @@ npm run dev
 - `FRONTEND_URL` - Frontend URL for CORS
 
 ### Frontend (.env)
+
 - `VITE_API_URL` - Backend API URL
